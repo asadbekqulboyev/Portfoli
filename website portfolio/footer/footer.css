@@ -1,0 +1,58 @@
+.f-container{
+    min-width: 259px;
+    width: 100%;
+    background: linear-gradient(45deg , rgb(243, 231, 255), rgb(252, 140, 254), rgb(115, 220, 255));
+    object-fit: cover;
+    display: flex;
+    justify-content: space-around;
+}
+.logof{
+text-align: center;
+border: 9px solid rgb(252, 99, 255);
+border-radius: 100%;
+width: 200px;
+height: 200px;
+box-shadow: 0 0 22px rgb(38, 0, 255);
+background-image: url('../img/IMG_20221106_191351.png') ;
+background-repeat: no-repeat;
+background-position: center;
+background-size: 80% 100%;
+
+}
+.f-logo{
+    border-radius: 6%;
+    width: 100%;
+}
+.f-right,.f-left{
+    width: 50%;
+}
+.f-left {
+    display: flex;
+flex-direction: column;}
+.fmenu, .fmenu+ul{
+    padding: 0;
+    display: flex;
+        justify-content: space-around;
+
+}
+.fmenu li, .fmenu+ul li{
+    padding: 20px;
+    list-style: none;
+}
+.fmenu+ul li a img{
+width: 40px;
+}
+@media (max-width:705px) {
+    .f-container{
+        flex-direction: column;
+    }
+    .f-right,.f-left{
+        width: 100%;
+    }
+   
+}
+@media (max-width:396px) {
+    .fmenu li{
+         padding:7px 7px 7px 2px ; 
+   
+}}

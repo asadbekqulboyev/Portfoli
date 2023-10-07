@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #f3f4f5;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input,textarea,button{
+    font-family: inherit;
+}
+.container {
+    width: 420px;
+    height: 350px;
+    padding: 25px;
+    background-color: #f3f4f5;
+    border-radius: 10px;
+    box-shadow: 0 0 25px 5px #333;
+}
+h1{
+    padding: 10px 0 ;
+    font-size:19px ;
+    font-weight: 700;
+    color: #090909;
+    text-align: center;
+    text-transform: uppercase;
+}
+.text-field{
+    width: 100%;
+    background: transparent;
+    height: 180px;
+    margin: 10px 0;
+    padding: 7px;
+    font-size: 16px;
+    border: 1px solid black;
+    outline: none;
+    resize: none;
+
+
+}
+.copy-btn{
+color: #f3f4f5;
+width: 50px;
+height: 30px;
+border-radius: 4px;
+font-size: 13px;
+border: none;  
+  background: rgb(74, 74, 255);
+  cursor: pointer;
+}
+.copy-btn:active{
+transform: scale(0.95);
+}
+.copied{
+    color: #090909;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 0 0 30px;
+    opacity: 0;
+}
+span.animation-effect{
+    animation:copieldAnim 0.7s linear;
+}
+   @keyframes copieldAnim {
+    
+   0%{
+        opacity: 0;
+        transform:scale(0.3);
+    }
+    20%{
+        
+        transform:scale(1.1);
+    }
+    40%{
+        transform:scale(0.9);
+    }
+    60%{
+        opacity: 1;
+        transform:scale(1.3);
+    }
+    80%{
+      
+        transform:scale(0.97);
+    } 
+    100%{
+        opacity:1;
+        transform: scale(1);    }
+    }
+    .copy-btnt {
+        position: absolute;
+        top:85%;
+        left: 40%;
+        height: 10vh;
+        width: 20%;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        background: rgb(74, 74, 255);
+        box-shadow: 0 0 25px 5px #333;
+    }
+.copy-btnt a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #f3f4f5;
+}
+ @media (max-width:550px) {
+    .container {
+        width: 70%;
+        min-height: 250px;
+        padding: 25px;
+        background-color: #f3f4f5;
+        border-radius: 10px;
+        box-shadow: 0 0 25px 5px #333;
+    }
+    .copy-btnt {
+        top:85%;
+        left: 35%;
+        width: 30%;
+       
+    }
+.copy-btnt a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #f3f4f5;
+}
+ }
+ @media (max-width:350px) {
+    .copy-btnt a{
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        color: #f3f4f5;
+    }
+    .copy-btnt {
+       
+        left: 35%;
+        width: 40%;
+        padding: 5px;
+    }
+ }

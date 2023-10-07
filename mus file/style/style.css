@@ -1,0 +1,98 @@
+body{
+     user-select: none;
+     background:linear-gradient(143deg,#E3EDFC ,#EBF3FD) ;
+}
+.main{
+display: flex;
+justify-content: center;
+}
+.audio-container{
+     box-shadow: inset 6.61px  6.61px 11px #dad9d9ad,inset -6.61px -6.61px 11px white;
+
+     border-radius: 20px;
+     padding: 40px 25px;
+     height: 450px;
+     width: 320px;
+    margin: 60px 0;
+}
+.title{
+     font-size: 25px;
+     font-family: Poppins , sans-serif ;
+     text-align: center;
+     margin-top: 0;
+}
+.img-container{
+     text-align: center;
+}
+.img-container img{
+     box-shadow: 2px 0px 40px rgb(82, 62, 62) inset 2px 0px 0px rgb(72, 23, 23);
+     width: 200px;
+     height: 200px;
+     padding: 10px;
+     border-radius: 50%;
+     background-color: #fff;
+     object-fit: cover;
+     animation: rotate 19s linear infinite;
+     animation-play-state: paused;
+     
+
+}
+.audio-container.play .img-container img {
+     animation-play-state: running;
+}
+.progress-container{
+     border-radius: 7px;
+     background-color: #576ae2;
+     width: 100%;
+     height: 4px;
+     margin: 40px 0 25px;
+}
+.progress-container .progress{
+     position: relative;
+     height: 100%;
+     width: 0;
+     background-color: #6d809e;
+     transition: .1s linear;
+}
+.progress-container .progress::before{
+     position: absolute;
+     border-radius: 50%;
+     right: 0;
+     top: -2.5px;
+     border: 1px solid #4bb5f7;
+     box-shadow: 0px 0px 4px rgb(139, 238, 255);
+     content: '';
+padding: .7px;    
+ background: #24a6f7;
+     height:7px ;
+     width: 7px;
+}
+.navigation{
+     text-align: center;
+}
+.btn{
+     user-select: none;
+     padding: 1.5em 1.5em;
+     border: none;
+     background: #e6e7ee;
+     border-radius: 50px;
+     font-size: 1rem;
+     outline: none;
+     margin: 10px;
+     font-weight: 700;
+     box-shadow: 2px -1px 2px #0080ff ,-1px 2px 6px #0475ff ;
+     cursor: pointer;
+}
+.btn:nth-child(2){
+     background: #65a0f8;
+     color: #fafcff;
+}
+@keyframes rotate {
+     from{
+   transform: rotate(0deg);
+     }
+     to{
+          transform: rotate(360deg);
+
+     }
+}

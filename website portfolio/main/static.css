@@ -1,0 +1,179 @@
+
+.skills{
+  width: 100%;
+  height: 100%;
+  min-width: 259px;
+  
+   
+}
+.teh{
+
+    width: 124px;
+   }
+   
+   .skills-content{
+  background:linear-gradient( 75deg,rgb(141, 225, 246), rgb(52, 167, 255));
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items:center;
+   }
+  
+   p.text{
+    text-align: justify;
+    text-align-last: center;
+    font-family: sans-serif;
+    line-height: 29px;
+     box-sizing: border-box;
+    padding: 15px;
+     font-size:large ;
+     color: rgb(255, 255, 255);
+   }
+   .tex{
+    color: blue;
+   }
+   p.text a{
+    text-decoration: none;
+     color: rgb(95, 37, 255);
+   }
+   p.text a:active{
+    padding-bottom: 10px;
+   border-bottom: 2px solid rgb(0, 255, 72);
+     color: aqua;
+   }
+   
+   p.tit-text{
+    
+      text-align: center;
+      font-family: sans-serif;
+     font-size: medium;
+     font-weight: 700;
+     font-size: 24px;
+     color: rgb(255, 255, 255);
+      
+     }
+   
+   .column.right{
+    padding: 10px;
+    background:none;
+    width: 100%;
+     align-items: center;
+     justify-content: center;
+   }
+   .column.right.activ-teh{
+ animation:tehAnim 0.5s ease  ;
+   }
+   
+   @keyframes tehAnim {
+    
+    0%{
+         opacity: 0.1;
+      
+     }
+    
+     
+     60%{
+         opacity: 1;
+         transform:scale(1);
+     }
+     80%{
+       
+         transform:scale(0.99);
+     } 
+     100%{
+         opacity:1;
+         transform: scale(1);    }
+     }
+ 
+  
+   .column.left{
+    flex-direction: flex;
+   margin: 0px auto;
+    border-right: 2px solid rgb(0, 0, 199);
+     width: 50%;
+    text-align: center;
+   }
+   .fax{
+    color: aliceblue;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 20px auto;
+   }
+   .fax span img{
+    width: 16px;
+    background: none;
+   }
+   .line{
+     height: 22.5px ;
+     width: 100%;
+     border-radius: 5px 5px 5px 5px;
+     box-shadow: 0 0 2px 2px rgb(47, 0, 255);
+   }
+   .line span{
+    margin-top: -9px;
+     border-right: 4px solid rgb(0, 34, 255);
+     border-radius: 5px 2px 2px 5px ;
+     background: rgb(255, 255, 255);
+  
+
+   }
+   
+   
+   .line.html span.s{
+   
+   
+     width: 70%;
+     height: 100%;
+     padding-left: 75%;
+   
+   }
+   .line.css span.s{
+     width: 100%;
+     height: 100%;
+     padding-left: 65%;
+     background: rgb(255, 255, 255);
+   }
+   .line.js span.s{
+     width: 100%;
+     height: 100%;
+     padding-left:65%;
+     background: rgb(255, 255, 255);
+   }
+   .line.scss span.s{
+     width: 100%;
+     height: 100%;
+     padding-left:  53%;
+   
+     background: rgb(255, 255, 255);
+   }
+   .line.bts span.s{
+     width: 100%;
+     height: 100%;
+     padding-left: 49%;
+     background: rgb(255, 255, 255);
+   }
+   @media (max-width:903px) {
+    h2.title{
+      padding: 5px 0;
+    }
+    .column.left{
+       border: none;
+      width: 100%;
+    }
+    .skills-content{
+      flex-direction: column;
+    }
+    
+   }
+   @media (max-width:566px) {
+    h2.title{
+      padding: 45px 0;
+    }
+    p.text{
+       text-align: center;
+       padding: 10px 1px 10px 20px  ;
+       font-size:large ;
+     } 
+     
+     }

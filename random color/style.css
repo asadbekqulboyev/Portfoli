@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    min-height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+input,textarea,button{
+  font-family: inherit;
+}
+.container{
+    background-color:#f8f6f6 ;
+    border-radius: 6px;
+    box-shadow: 0 0 25px 5px rgba(82, 86,94,0.2);
+    display: flex;
+}
+
+.color-preview{
+width:280px  ;
+height: 250px;
+background-color: #ed145b;
+border-top-left-radius: 6px;
+border-bottom-left-radius: 6px;
+}
+.controls{
+    width: 430px;
+    height: 250px;
+    padding: 60px;
+    background-color: #f8f6f6;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    display: flex;
+    flex-direction: column;
+
+}
+.input-box{
+    display: flex;
+   
+}
+.input-box input{
+    width: 100%;
+    padding: 15px;
+    color:#ed145b;
+    background: transparent;
+    font-size: 22px;
+    font-weight: 600;
+    border: 2px solid #ed145b;
+    border-top-left-radius:6px  ;
+    border-bottom-left-radius: 6px;
+
+}
+.input-box .copy-btn{
+    padding: 10px 25px;
+    background-color: #ed145b;
+    font-size: 22px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    cursor: pointer;
+
+}
+.generate-btn{
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    color: white;
+    background-color: #000000;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.copy-btn:active , 
+.generate-btn:active{
+    opacity: 0.9;
+}
+.alert-message{
+    width: 400px;
+    padding: 15px;
+    color: #f8f6f6;
+    background-color: #363636;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    text-align: center;
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+.alert-message .code{
+font-weight: 700;
+}
+.slide-effect{
+    animation: slideInUp 2s ease-in;
+}
+/*  endi slideInUp nomli animation yaratamiz 
+ */
+ @keyframes slideInUp{
+   0%{
+    opacity: 0;
+    bottom: -100px;
+   }
+   20%{
+    opacity: 1;
+    bottom: 20px;
+   }
+   90%{
+    opacity: 1;
+    bottom: 20px;
+   }
+   100%{
+    opacity: 0;
+  
+   }
+ }
+button img{
+    width: 17px;
+}
+.btn-color{
+
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 75%;
+    left: 45%;
+    background: #000000;
+    padding:10px;
+    border-radius: 7px;
+}
+.btn-color a{
+    color: #f8f6f6;
+    text-decoration: none;
+}

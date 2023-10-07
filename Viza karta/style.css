@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+margin: 0;
+padding: 0;
+min-height: 100vh;
+font-family: sans-serif;
+background:rgb(7, 43, 23) ;
+background-size: cover;
+background-position: center;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+user-select: none;
+}
+.debit-card{
+    width: 630px;
+    height: 395px;
+    padding: 50px 50px 40px;
+    background: linear-gradient(111.46deg , rgba(180, 180, 180,0.5)0%,  rgba(153, 153, 153,0.15)100%);
+    border: 2px solid rgba(224, 224, 224, 0.2);
+    backdrop-filter:blur(10px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+    overflow: hidden;
+
+}
+.debit-card .visa{
+    width: 135px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+
+}
+.debit-card .chip{
+    width: 60px;
+   margin-bottom: 80px;
+}
+.debit-card h2{
+   color: aliceblue;
+   font-size: 54px;
+   font-weight: 500;
+   text-transform: capitalize;
+   margin-bottom: 20px;
+  
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+.info .title{
+    display: block;
+    color: aliceblue;
+    font-size: 16px;
+    text-transform:uppercase ;
+    margin-bottom: 6px;
+
+}
+    
+.info .detail{
+    
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform:capitalize ;
+    margin-bottom: 6px;
+
+}
+.link{
+    position: relative;
+    top: 10px;
+    background: #0c4dff;
+    padding: 10px ;
+    border-radius: 5px;
+    color: aliceblue;
+    text-decoration: none;
+}
+@media (max-width:608px) {
+    .debit-card{
+        width: 100%;
+    }
+    .debit-card h2{
+        font-size: 44px;
+    }
+    
+}
+    
+@media (max-width:528px) {
+
+    .debit-card h2{
+        font-size: 35px;
+    }
+    .info {
+      
+       margin-top: 45px;
+       
+    }
+    .info .title{
+        font-size: 10px;
+    }
+    .info .detail{
+font-size: 15px;
+    }
+    
+}
+    
+@media (max-width:431px) {
+   
+    .debit-card h2{
+        font-size: 24px;
+    }
+    
+}
+@media (max-width:338px) {
+    .debit-card h2{
+        font-size: 17px;
+    } 
+    .debit-card .chip{
+        width: 45px;
+    }
+    .debit-card .visa{
+        width: 57px;
+    }
+}

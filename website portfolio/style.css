@@ -1,0 +1,41 @@
+
+@import url(./header/style-header.css) ;
+@import url(./main/main.css);
+@import url(./main/static.css);
+@import url(./main/card.css);
+@import url(./main/slider.css);
+@import url(./form/form.css);
+@import url(./footer/footer.css);
+@import url(./src/bootstrap-5.2.3-dist/css/bootstrap.css);
+
+@import url(./src/bootstrap-5.2.3-dist/css/bootstrap.min.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body::-webkit-scrollbar-track{
+    background:#4a4afba2;
+    width: 0;
+    display: none;
+  }
+body::-webkit-scrollbar{
+    width: 7px;
+    background-color: #ffffff;
+  }
+body::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: #1900ff;
+  }
+a,li,ul,nav,p,h1,h2,em,span,div{
+    user-select: none;
+    text-decoration: none;
+}
+.carousel-item{
+    position: relative;
+}
+hr{
+    margin: 0;
+}

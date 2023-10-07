@@ -1,0 +1,134 @@
+.teams#teams{
+width: 100%;
+min-width: 259px;
+box-sizing: border-box;
+height:100%;
+position: relative;
+background:#ffffff;
+}
+.btn-style{
+font-weight: 900;
+}
+.carousel-inner{
+    height: 100%;
+
+}
+.carousel-item{
+    height: 100vh !important;
+}
+span .carousel-control-next-icon{
+font-size: 270px;
+}
+.corusel-malumot{
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+background: linear-gradient(#0058fc92, #f2e8ffdf);
+backdrop-filter:blur(11px) ;
+
+display: flex;
+justify-content: start;
+transition: all 0.9s;
+}
+.imv2{
+position: absolute;
+top: 10px;
+}
+.border-tp3{
+width: 90px;
+position: absolute;
+margin-top: 45px;
+}
+.corusel-malumot div{
+width: 80%;
+
+margin: 0 auto;
+position: absolute;
+top: 40%;
+left:10%;
+overflow: hidden;
+}
+.carousel-item .imgs{
+height: 110vh;
+}
+.corusel-malumot div p{
+text-shadow: 10px 10px 15px 10px black;
+font-size: 39px;
+font-weight: 500;
+word-spacing: 10px;
+color: rgb(246, 182, 21);
+}
+.malumot-title{
+
+font-size: 34px ;
+color: #ffffff;
+}
+
+.corusel-malumot button{
+width: 29%;
+border: none;
+border-radius: 10px;
+padding: 10px;
+background-color: rgb(0, 0, 255);
+transition: all 0.3s;
+}
+.corusel-malumot button a{
+text-decoration: none;
+font-size: 20px;
+color: #ffffff;
+}
+
+@media(max-width:927px){
+    
+    .border-tp3{
+       
+        margin-top: 5px;
+    }
+
+
+.corusel-malumot div p{
+     font-size: 22px;
+     word-spacing: normal;
+ }
+ .malumot-title{
+     font-size: 26px ;
+     color: #ffffff;
+ }
+}
+
+@media(max-width:629px){
+    .teams#teams{
+       min-height: 90vh;
+        } 
+        .carousel-inner{
+            height: 90%;
+        
+        }
+    }
+   
+
+@media(max-width:367px){
+    .teams#teams{
+        height: 100vh;
+        }
+       
+    .carousel-item .imgs{
+        height: 100vh;
+        }
+        .corusel-malumot{
+            height: 100vh;
+        }
+    
+.corusel-malumot p{
+     font-size: 17px;
+ }
+ .malumot-title{
+     font-size: 22px ;
+     color: #ffffff;
+ }
+ 
+.corusel-malumot button{
+    width: 39%;
+}
+}
